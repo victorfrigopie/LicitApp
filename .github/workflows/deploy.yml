@@ -23,9 +23,9 @@ jobs:
         run: npm install
 
       - name: Build and export Next.js
-        run: |
+        
           npm run build
-          npm run export
+         
           # Copy data files into out folder
           cp -r data out/data
           # Ensure Jekyll processing is disabled
